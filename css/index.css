@@ -65,7 +65,7 @@ a:hover {
     /* border: 1px solid black; */
     float: left;
     box-sizing: border-box;
-    margin-left: .5rem;
+    margin-left: .2rem;
 }
 
 .conter .header .wzc {
@@ -117,5 +117,5 @@ a:hover {
     font-size: .16rem;
     text-align: center;
     line-height: .7rem;
-    font-weight: 800px;
+    /* font-weight: 800px; */
 }

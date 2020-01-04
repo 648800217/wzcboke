@@ -1,0 +1,44 @@
+@media screen and (max-width: 500px) {
+    .main-l .new-l {
+        height: 100% !important;
+    }
+}
+
+.conter .main .main-l .new-l {
+    height: 100%;
+}
+
+.conter .main .main-l .new-l .actor {
+    margin-top: 10px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
+.conter .main .main-l .new-l .actor p {
+    font-size: 15px;
+    /* float: left; */
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.conter .main .main-l .new-l .content {
+    width: 100%;
+    height: 100%;
+}
+
+.conter .main .main-l .new-l div .img {
+    width: 33%;
+    height: auto;
+    background-color: slateblue;
+    padding: 0 5px;
+    margin: 5px 0;
+    background-image: url(../uploads/wallpaper-2572384.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.conter .main .main-l .new-l .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

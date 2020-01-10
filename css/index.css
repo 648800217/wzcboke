@@ -222,6 +222,22 @@
         cursor: pointer;
     }
     
+    .conter .main .main-r .ok p {
+        font-size: 35px;
+        color: red;
+    }
+    
+    .conter .main .main-r .ok {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        border-radius: 50%;
+        line-height: 100px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    
     .conter .main .main-r .new-r {
         background-color: #fff;
         padding: 25px;

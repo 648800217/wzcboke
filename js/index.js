@@ -20,7 +20,7 @@
     gettime();
     gettop();
     //点击logo下拉二级框----------------------------------
-    $('#select').on('click',function(){
+    $('#select').on('tap',function(){
        
         $('#select').stop().toggleClass('rotate')
         $('.selectdow').stop().slideToggle(500);
@@ -34,7 +34,7 @@
     })
     // 监听scoll改goup------------------------------------------
     function gettop() {
-        $('.icon-serch').on('click', function() {
+        $('.icon-serch').on('tap', function() {
             // console.log('111')
             $('#inp').stop().toggle(500);
         })
@@ -43,7 +43,7 @@
             // console.log(i)
             if (i > 350) {
                 $('.gotop ').stop().fadeIn(500);
-                $('.gotop ').on('click', function() {
+                $('.gotop ').on('tap', function() {
                     // 滚动到顶部：
                     $('html,body').stop().animate({ 
                         scrollTop : 0,    

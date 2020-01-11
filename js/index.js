@@ -1,5 +1,6 @@
-$(function() {
+     $(function() {
     // 调取time
+    
     var data = new Date()
     var s = data.getHours()
     var f = data.getMinutes()
@@ -18,6 +19,8 @@ $(function() {
     $('.time span:nth-child(3)').text(m)
     gettime();
     gettop();
+    
+    
     // 监听scoll改goup------------------------------------------
     function gettop() {
         $('.icon-serch').on('click', function() {
@@ -27,25 +30,18 @@ $(function() {
         $(window).on('scroll', function() {
             var i = $(window).scrollTop();
             // console.log(i)
-            if (i > 120) {
-                $('.gotop ').css({
-                    opacity: '1',
-                });
+            if (i > 350) {
+                $('.gotop ').stop().fadeIn(500);
                 $('.gotop ').on('click', function() {
-
-
-
                     // 滚动到顶部：
-
-                    $('html,body').animate({ scrollTop: '0px' }, 1000);
-
+                    $('html,body').stop().animate({ 
+                        scrollTop : 0,    
+                }, 1000);
                     // console.log(i)
-
                 })
             } else {
-                $('.gotop ').css({
-                    opacity: '0'
-                })
+                $('.gotop ').stop().fadeOut(500)
+               
             }
 
         })
@@ -77,7 +73,19 @@ $(function() {
     }
     // gettime()
 
+// 头部栏的显示隐藏------------------------------------
+var h_is=60
+$(window).on('scroll',function(){
+    var h_i = $(window).scrollTop();
+    
+    console.log(h_i)
+    if(h_i>60){
+     $('.header').stop().fadeOut(200)
+    }else{
+        $('.header').stop().fadeIn(200)
 
+    }
+})
 
 
 

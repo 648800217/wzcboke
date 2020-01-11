@@ -47,6 +47,7 @@
             width: 80%;
             margin: 0 auto;
             padding-left: 20%;
+            /* animation: rotate 1s infinite ; */
         }
         .mui-icon {
             display: block !important;
@@ -64,7 +65,18 @@
             /* transition: all 2s; */
         }
     }
-    
+    @keyframes rotate{
+        0% {
+          transform: rotate(0deg);
+          transition: all 1s ;
+        }
+        100%{
+            transform: rotate(90deg);
+            transition: all 1s;
+
+
+        }
+    }
     .header-h {
         background-color: rgba(54, 144, 207);
         color: white;
@@ -122,7 +134,10 @@
         margin: 0 auto;
         width: 100%;
     }
-    
+    .conter .header .h-conter .logo .rotate{
+        transform: rotate(90deg);
+        transition: all 1s;
+    }
     .conter .header .h-conter .logo .mui-icon {
         position: absolute;
         left: 0;
@@ -130,8 +145,38 @@
         font-size: 35px;
         font-weight: bold;
         display: none;
+        transition: all 1s;
     }
-    
+    .conter .header .logo .selectdow{
+        display: none;
+    }
+    .conter .header .logo .selectdow ul{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+         
+    }
+    .conter .header .logo .selectdow ul li  a{
+        border-bottom: 1px solid #000;
+        text-align: left;
+        margin: 10px 30px;
+    }
+    .conter .header .logo .selectdow ul li{
+        list-style: none;
+        width: 150px;
+        /* padding: 10px; */
+        /* margin: 10px 5px; */
+     
+    }
+    .conter .header .logo .selectdow{
+        /* width: 200px; */
+        /* height: 150px; */
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 60px;
+       
+    }
     .conter .header .logo a {
         display: block;
         text-align: center;

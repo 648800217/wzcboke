@@ -19,8 +19,19 @@
     $('.time span:nth-child(3)').text(m)
     gettime();
     gettop();
+    //点击logo下拉二级框----------------------------------
+    $('#select').on('click',function(){
+       
+        $('#select').stop().toggleClass('rotate')
+        $('.selectdow').stop().slideToggle(500);
+
     
+          
     
+        console.log('1111')
+        return false
+        
+    })
     // 监听scoll改goup------------------------------------------
     function gettop() {
         $('.icon-serch').on('click', function() {
@@ -78,7 +89,7 @@ var h_is=60
 $(window).on('scroll',function(){
     var h_i = $(window).scrollTop();
     
-    console.log(h_i)
+    // console.log(h_i)
     if(h_i>60){
      $('.header').stop().fadeOut(200)
     }else{

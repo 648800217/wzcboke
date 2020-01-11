@@ -299,7 +299,13 @@
         margin: 0 auto;
         cursor: pointer;
     }
-    
+    .conter .main .main-r .new-r .img{
+        background-image: url(../uploads/wximg.jpg);
+        background-repeat: no-repeat;
+        background-size:125px 125px;
+        background-position: center center;
+        margin-top: 5px;
+    }
     .conter .main .main-r .new-r {
         background-color: #fff;
         padding: 25px;
@@ -465,7 +471,7 @@
     
     .conter .main .main-r .img {
         padding: 5px 70px;
-        background-color: springgreen;
+        /* background-color: springgreen; */
         box-sizing: border-box;
         height: 130px;
     }

@@ -136,7 +136,7 @@
     }
     .conter .header .h-conter .logo .rotate{
         transform: rotate(90deg);
-        transition: all 1s;
+        transition: all .5s;
     }
     .conter .header .h-conter .logo .mui-icon {
         position: absolute;
